@@ -7,31 +7,32 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<link rel="stylesheet" type="text/css" href="/student_management_war_exploded/URLToReachResourcesFolder/css/my-style-sheet.css">
+<%--<link rel="stylesheet" type="text/css" href="/student_management_war_exploded/URLToReachResourcesFolder/css/my-style-sheet.css">--%>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<link rel="stylesheet" class="myFonts">
+<link rel="stylesheet" class="text-monospace">
 
 <H1 align="center">Student List</H1>
 <form action="/student_management_war_exploded/addStudent">
-    <input type="submit" value="ADD">
+    <input  type="submit" class="btn btn-primary"  value="ADD" >
 </form>
-<table border="1" align="center">
-    <thead>
+<table  class="table table-hover">
+    <thead class="thead-dark">
     <tr>
-        <td>id</td>
-        <td>name</td>
-        <td>mobile</td>
-        <td>country</td>
+        <td scope="col">id</td>
+        <td scope="col">name</td>
+        <td scope="col">mobile</td>
+        <td scope="col">country</td>
     </tr>
     </thead>
 
     <c:forEach var="student" items="${students}">
-        <tr>
+        <tr >
             <td> ${student.id}</td>
             <td> ${student.name}</td>
             <td>${student.mobile}</td>
