@@ -40,7 +40,7 @@ public class StudentController {
 
     @PostMapping("/save-student")
     public String saveStudent(Student student) {
-        if(student.getId()==0){
+        if (student.getId() == 0) {
             studentService.addStudent(student);
         } else {
             studentService.updateStudent(student);
@@ -58,22 +58,19 @@ public class StudentController {
     }
 
 
-
     @GetMapping("/updateStudent")
-    public String updateStudent(@RequestParam("userId") int id,Model model) {
+    public String updateStudent(@RequestParam("userId") int id, Model model) {
 
         Student student = studentService.getStudent(id);
-        model.addAttribute("student",student);
+        model.addAttribute("student", student);
         return "add-student";
     }
-
-
 
 
     @GetMapping("/deleteStudent")
     public String updateStudent(@RequestParam("userId") int id) {
 
-    studentService.deleteStudent(id);
+        studentService.deleteStudent(id);
 
         return "redirect:/showStudent";
     }

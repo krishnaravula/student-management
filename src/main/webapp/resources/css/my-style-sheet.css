@@ -1,0 +1,25 @@
+@charset "UTF-8";
+h1{
+color: aquamarine;
+}
+
+
+.myFonts{
+    font-size: 20px;
+    font-family: Monaco;
+}
+
+.myButton{
+    color: cadetblue;
+    background-color: brown;
+    border: 2px solid black;
+    font-size: 24px;
+    padding: 10px 10px 10px 10px;
+}
+.myButton:hover{
+    color: blanchedalmond;
+
+}
+.myTable{
+
+}

@@ -10,10 +10,11 @@
 <html>
 <head>
     <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="/student_management_war_exploded/URLToReachResourcesFolder/css/my-style-sheet.css">
 </head>
 <body>
 <div align="center">
-    <h2>Add Student Info</h2>
+    <h1>Add Student Info</h1>
     <form:form action="save-student" modelAttribute="student" method="post">
         <form:hidden path="id"/>
         <label>Name : </label>

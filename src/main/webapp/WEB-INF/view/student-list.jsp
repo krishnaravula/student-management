@@ -7,12 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<link rel="stylesheet" type="text/css" href="/student_management_war_exploded/URLToReachResourcesFolder/css/my-style-sheet.css">
 
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
+<link rel="stylesheet" class="myFonts">
 
 <H1 align="center">Student List</H1>
 <form action="/student_management_war_exploded/addStudent">
